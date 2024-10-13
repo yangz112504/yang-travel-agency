@@ -1,9 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    height: 100%;
+    box-sizing: border-box;
+}
+body{
+    
+}
 #nav-container{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #f0f0f0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    height: 15%;
 }
 #navbar{
     list-style-type: none;
@@ -17,9 +30,39 @@
 }
 #navbar li a{
     text-decoration: none;
-    color: #333;
+    color: white;
     cursor: pointer;
 }
 #navbar li a:hover{
     text-decoration: underline;
+}
+
+#search-container{
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
+}
+#search-bar{
+    border: none;
+    width: 250px;
+}
+#home-page{
+    background-image: url('beautiful-mountains-landscape.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    height: 85%;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.home-content{
+    width: 90%;
+    height: 75%;
+    margin-top: 5%;
+    padding-left: 10px;
+    background-color: rgba(136, 130, 130, 0.7);
+}
+.about-us-content{
+    
 }
