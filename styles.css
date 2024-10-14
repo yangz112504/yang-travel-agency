@@ -9,7 +9,7 @@ html, body{
 body{
     
 }
-#nav-container{
+.nav-container{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -18,22 +18,21 @@ body{
     color: white;
     height: 15%;
 }
-#navbar{
+.navbar{
     list-style-type: none;
     padding-top: 1%;
-
 }
-#navbar li{
+.navbar li{
     display: inline;
     margin-right: 30px;
     font-size: 30px;
 }
-#navbar li a{
+.navbar li a{
     text-decoration: none;
     color: white;
     cursor: pointer;
 }
-#navbar li a:hover{
+.navbar li a:hover{
     text-decoration: underline;
 }
 
@@ -46,7 +45,7 @@ body{
     border: none;
     width: 250px;
 }
-#home-page{
+.home-page{
     background-image: url('beautiful-mountains-landscape.jpg');
     background-size: cover; 
     background-repeat: no-repeat; 
@@ -63,6 +62,35 @@ body{
     padding-left: 10px;
     background-color: rgba(136, 130, 130, 0.7);
 }
-.about-us-content{
-    
+.home-content h1{
+    font-size: 75px;
 }
+.about-us-card{
+    width: 400px;
+    background-color: #0DCAF0;
+    color: white;
+}
+#contactForm{
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    justify-content: center;
+}
+  #contactForm input,
+  #contactForm textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 8px;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  #contactForm button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  #contactForm button:hover {
+    background-color: #0056b3;
+  }
+ 
