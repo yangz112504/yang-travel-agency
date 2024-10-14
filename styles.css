@@ -6,9 +6,6 @@ html, body{
     height: 100%;
     box-sizing: border-box;
 }
-body{
-    
-}
 .nav-container{
     display: flex;
     justify-content: space-between;
@@ -53,13 +50,15 @@ body{
     height: 85%;
     color: white;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 }
 .home-content{
-    width: 90%;
+    max-width: 90%;
     height: 75%;
     margin-top: 5%;
+    margin-right: 20%;
     padding-left: 10px;
+    padding-right: 50px;
     background-color: rgba(136, 130, 130, 0.7);
 }
 .home-content h1{
@@ -70,27 +69,48 @@ body{
     background-color: #0DCAF0;
     color: white;
 }
+.about-us-content{
+    width: 90%;
+    height: 75%;
+    margin-top: 5%;
+    padding: 40px;
+    background-color: rgba(136, 130, 130, 0.7);
+}
+.contact-us-content{
+    width: 40%;
+    height: 75%;
+    margin-top: 5%;
+    padding-left: 20px;
+    background-color: rgba(136, 130, 130, 0.7);
+}
 #contactForm{
     display: flex;
     flex-direction: column;
     max-width: 400px;
     justify-content: center;
 }
-  #contactForm input,
-  #contactForm textarea {
+#contactForm input,
+#contactForm textarea {
+width: 100%;
+margin-bottom: 15px;
+padding: 8px;
+background-color: rgba(255, 255, 255, 0.8);
+}
+#contactForm button {
+padding: 10px 20px;
+background-color: #007bff;
+color: white;
+border: none;
+cursor: pointer;
+}
+#contactForm button:hover {
+background-color: #0056b3;
+}
+
+.results-container{
+    margin-top: 3%;
+    width: 30%;
+}
+.results-card{
     width: 100%;
-    margin-bottom: 15px;
-    padding: 8px;
-    background-color: rgba(255, 255, 255, 0.8);
-  }
-  #contactForm button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    cursor: pointer;
-  }
-  #contactForm button:hover {
-    background-color: #0056b3;
-  }
- 
+}
