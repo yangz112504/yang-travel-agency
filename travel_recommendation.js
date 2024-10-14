@@ -56,6 +56,9 @@ function search(){
         });
 }
 
+function thankyou(){
+    alert('Thank you for contacting us! We received your message.');
+}
 
 searchBtn.addEventListener("click", search)
 clearBtn.addEventListener("click",clearResults);
