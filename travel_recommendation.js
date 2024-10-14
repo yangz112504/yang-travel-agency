@@ -46,7 +46,13 @@ function search(){
             }
         })
         .catch(error =>{
-            resultDiv.innerHTML = 'An error occurred while fetching data.';
+            resultDiv.innerHTML+=`
+                <div class="card results-card">
+                    <div class="card-body">
+                        <h5 class="card-title">An error occurred while fetching data.</h5>
+                    </div>
+                 </div>
+                 `;    
         });
 }
 
