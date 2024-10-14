@@ -22,15 +22,26 @@ function generateResult(name, imageUrl, description){
 }
 function search(){
     const input = document.getElementById("search-bar").value.toLowerCase();
+    console.log(input);
     clearResults();
     fetch('./travel_recommendation_api.json')
         .then(response => response.json())
         .then(data=>{
-            if(input === "countries"){
+            if(input === "countries" || input === "country"){
                 data.countries.forEach(function(country){
                     country.cities.forEach(function(city){
                         generateResult(city.name, city.imageUrl, city.description);
                     })
+                })
+            }
+            if(input === "temple" || input === "temples"){
+                data.temples.forEach(function(temple){
+                    generateResult(temple.name, temple.imageUrl, temple.description);
+                })
+            }
+            if(input === "beach" || input === "beaches"){
+                data.beaches.forEach(function(beach){
+                    generateResult(beach.name, beach.imageUrl, beach.description);
                 })
             }
         })

@@ -110,7 +110,9 @@ background-color: #0056b3;
 .results-container{
     margin-top: 3%;
     width: 30%;
+    overflow: scroll;
 }
 .results-card{
     width: 100%;
+    margin-bottom: 15px;
 }
