@@ -24,7 +24,8 @@ function search(){
     const input = document.getElementById("search-bar").value.toLowerCase();
     console.log(input);
     clearResults();
-    fetch('https://yang-travel-agency-production.up.railway.app/api/info')
+    const baseUrl = 'https://yang-travel-agency-production.up.railway.app/api/info';
+    fetch(baseUrl)
         .then(response => response.json())
         .then(data=>{
             if(input === "countries" || input === "country"){
